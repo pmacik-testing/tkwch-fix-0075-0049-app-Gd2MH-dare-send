@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hhdl
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0-20-tenant/tkwch-fix-0075-0049-app/devfile-sample-hhdl@sha256:bc7c67c08f16f945b6c140ffcda42afc7dafb49013717f3ab810ebbd36b633a0
+        name: my-nodejs
+        resources: {}
+status: {}
